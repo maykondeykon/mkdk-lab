@@ -1,0 +1,53 @@
+@import "helpers/var";
+body {
+  margin: 40px;
+}
+
+.inscrevase {
+  grid-area: inscrevase;
+}
+.explore1 {
+  grid-area: explore1;
+}
+.explore2 {
+  grid-area: explore2;
+}
+.crie1 {
+  grid-area: crie1;
+}
+.crie2 {
+  grid-area: crie2;
+}
+.compartilhe1 {
+  grid-area: compartilhe1;
+}
+.compartilhe2 {
+  grid-area: compartilhe2;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  padding: 10px;
+  font-size: 150%;
+}
+
+.wrapper {
+  background-color: #fff;
+  color: #444;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 0.06em;
+  grid-template-areas:
+    "header"
+    "inscrevase"
+    "explore1"
+    "explore2"
+    "crie1"
+    "crie2"
+    "compartilhe1"
+    "compartilhe2"
+    "footer";
+}
