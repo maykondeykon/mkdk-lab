@@ -1,0 +1,26 @@
+.header {
+    display: grid;
+    border-bottom: 0.1em solid $cor_secundaria;
+    color: $cor_primaria;
+    background-color: #232323;
+    opacity: 0.8;
+    .logo{
+        grid-column: 1;
+        font-family: 'Cinzel Decorative', cursive;
+        padding-left: 0.5em;
+    }
+    .menu{
+        grid-column: 2;
+        text-align: right;
+        font-size: medium;
+        ul{
+            padding:0.3em 0;
+            margin: 0;
+            list-style: none;
+        }
+        li {
+            display: inline;
+            padding-right: 0.5em;
+        }
+    }
+  }

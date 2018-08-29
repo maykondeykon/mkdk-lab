@@ -1,8 +1,19 @@
 @import "helpers/var";
+@import "modules/header";
+@import "modules/inscrevase";
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative');
 body {
-  margin: 40px;
+  margin: 0;
+  font-family: 'Dosis', sans-serif;
 }
 
+.header {
+  grid-area: header;
+}
+.header-inscrevase{
+    background:blue url('/images/bg1.jpg') no-repeat scroll left center;
+}
 .inscrevase {
   grid-area: inscrevase;
 }
@@ -26,6 +37,10 @@ body {
 }
 
 .box {
+  padding: 10px;
+  font-size: 150%;
+}
+.box1 {
   background-color: #444;
   color: #fff;
   padding: 10px;
@@ -33,7 +48,7 @@ body {
 }
 
 .wrapper {
-  background-color: #fff;
+  background-color:$cor_primaria;
   color: #444;
 }
 

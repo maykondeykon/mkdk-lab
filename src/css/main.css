@@ -1,5 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis");
+@import url("https://fonts.googleapis.com/css?family=Cinzel+Decorative");
+.header {
+  display: grid;
+  border-bottom: 0.1em solid #007BFF;
+  color: #f5eee7;
+  background-color: #232323;
+  opacity: 0.8;
+}
+.header .logo {
+  grid-column: 1;
+  font-family: "Cinzel Decorative", cursive;
+  padding-left: 0.5em;
+}
+.header .menu {
+  grid-column: 2;
+  text-align: right;
+  font-size: medium;
+}
+.header .menu ul {
+  padding: 0.3em 0;
+  margin: 0;
+  list-style: none;
+}
+.header .menu li {
+  display: inline;
+  padding-right: 0.5em;
+}
+
+.inscrevase {
+  height: 400px;
+  color: #f5eee7;
+}
+
 body {
-  margin: 40px;
+  margin: 0;
+  font-family: "Dosis", sans-serif;
+}
+
+.header {
+  grid-area: header;
+}
+
+.header-inscrevase {
+  background: blue url("/images/bg1.jpg") no-repeat scroll left center;
 }
 
 .inscrevase {
@@ -31,6 +74,11 @@ body {
 }
 
 .box {
+  padding: 10px;
+  font-size: 150%;
+}
+
+.box1 {
   background-color: #444;
   color: #fff;
   padding: 10px;
@@ -38,7 +86,7 @@ body {
 }
 
 .wrapper {
-  background-color: #fff;
+  background-color: #f5eee7;
   color: #444;
 }
 
