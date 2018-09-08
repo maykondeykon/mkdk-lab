@@ -1,4 +1,40 @@
-.inscrevase{
-    height: 400px;
-    color: $cor_primaria;
+@import "../helpers/var";
+
+.inscrevase {
+  display: grid;
+  color: $cor_primaria;
+  .perfil-inscrevase-form {
+    display: grid;
+    grid-column: 1;
+    grid-template-columns: 2fr 1fr;
+    .perfil {
+      grid-column: 1;
+      ul {
+        padding: 0.3em 0;
+        margin: 0;
+        list-style: none;
+      }
+      li:before {
+        content: "►";
+        display: block;
+        float: left;
+        width: 1.2em;
+        color: #ff0000;
+      }
+    }
+    .inscrevase-form {
+      grid-column: 2;
+    }
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .inscrevase {
+    .perfil-inscrevase-form {
+      grid-template-columns: 0fr 1fr;
+    }
+    .perfil {
+      display: none;
+    }
+  }
 }

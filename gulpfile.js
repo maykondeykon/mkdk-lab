@@ -11,3 +11,8 @@ gulp.task('server', function () {
 
     gulp.watch("*.html").on("change", reload);
 });
+
+gulp.task('icons', function() {
+    return gulp.src('node_modules/@fortawesome/fontawesome-free/webfonts/*')
+        .pipe(gulp.dest('./src/webfonts/'));
+});

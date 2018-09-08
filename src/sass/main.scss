@@ -1,21 +1,36 @@
 @import "helpers/var";
 @import "modules/header";
 @import "modules/inscrevase";
-@import url('https://fonts.googleapis.com/css?family=Dosis');
-@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative');
+@import "../../node_modules/typeface-dosis/index.css";
+@import "../../node_modules/typeface-cinzel-decorative/index.css";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims";
+
 body {
   margin: 0;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
 }
 
 .header {
   grid-area: header;
 }
-.header-inscrevase{
-    background:blue url('/images/bg1.jpg') no-repeat scroll left center;
+.header-inscrevase {
+  background: blue url($pasta_imagens+$bg_1) no-repeat scroll left center;
 }
 .inscrevase {
   grid-area: inscrevase;
+}
+.perfil-inscrevase-form {
+  grid-area: perfil-inscrevase-form;
+}
+.perfil {
+  grid-area: perfil;
+}
+.inscrevase-form {
+  grid-area: inscrevase-form;
 }
 .explore1 {
   grid-area: explore1;
@@ -38,7 +53,6 @@ body {
 
 .box {
   padding: 10px;
-  font-size: 150%;
 }
 .box1 {
   background-color: #444;
@@ -48,7 +62,7 @@ body {
 }
 
 .wrapper {
-  background-color:$cor_primaria;
+  background-color: $cor_primaria;
   color: #444;
 }
 

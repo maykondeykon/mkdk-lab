@@ -1,3 +1,5 @@
+@import "../helpers/var";
+
 .header {
     display: grid;
     border-bottom: 0.1em solid $cor_secundaria;
@@ -21,6 +23,17 @@
         li {
             display: inline;
             padding-right: 0.5em;
+        }
+        a{
+            color: $cor_link;
+            text-decoration: none;
+        }
+        a:hover{
+            color: $cor_link_hover;
+        }
+        a:focus{
+            color: $cor_link_hover;
+            font-weight: bold;
         }
     }
   }
