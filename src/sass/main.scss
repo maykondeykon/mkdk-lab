@@ -1,6 +1,7 @@
 @import "helpers/var";
 @import "modules/header";
 @import "modules/inscrevase";
+@import "modules/explore1";
 @import "../../node_modules/typeface-dosis/index.css";
 @import "../../node_modules/typeface-cinzel-decorative/index.css";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
@@ -49,6 +50,9 @@ body {
 }
 .compartilhe2 {
   grid-area: compartilhe2;
+}
+.footer {
+  grid-area: footer;
 }
 
 .box {

@@ -42,6 +42,8 @@
 .inscrevase {
   display: grid;
   color: #f5eee7;
+  background-color: #232323;
+  opacity: 0.8;
 }
 .inscrevase .perfil-inscrevase-form {
   display: grid;
@@ -55,16 +57,54 @@
   padding: 0.3em 0;
   margin: 0;
   list-style: none;
+  text-align: justify;
 }
-.inscrevase .perfil-inscrevase-form .perfil li:before {
-  content: "►";
-  display: block;
-  float: left;
-  width: 1.2em;
-  color: #ff0000;
+.inscrevase .perfil-inscrevase-form .perfil li {
+  display: inline-flex;
+  margin: 0 1em 1em 0;
+}
+.inscrevase .perfil-inscrevase-form .perfil li i {
+  font-size: 2.2em;
+  display: inline-flex;
+  margin: 0 1em 0 0;
 }
 .inscrevase .perfil-inscrevase-form .inscrevase-form {
   grid-column: 2;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.inscrevase .perfil-inscrevase-form .inscrevase-form form {
+  background-color: #007BFF;
+  max-width: 17em;
+  padding: 0.6em;
+  text-align: center;
+  border: 0;
+  border-radius: 0.2em;
+  opacity: 100;
+}
+.inscrevase .perfil-inscrevase-form .inscrevase-form form input {
+  display: block;
+  margin-bottom: 0.4em;
+  width: -webkit-fill-available;
+  padding: 0.6em;
+  border: 0;
+  border-radius: 0.2em;
+}
+.inscrevase .perfil-inscrevase-form .inscrevase-form form button {
+  width: -webkit-fill-available;
+  padding: 0.6em;
+  border: 0;
+  border-radius: 0.2em;
+  background-color: #007BFF;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
+.inscrevase .perfil-inscrevase-form .inscrevase-form form button:hover {
+  background-color: #0765ca;
 }
 
 @media only screen and (max-width: 599px) {
@@ -75,6 +115,22 @@
     display: none;
   }
 }
+.explore1 {
+  text-align: center;
+  background-color: #444;
+  color: #fff;
+}
+.explore1 .link-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.6em;
+  background-color: #444;
+  border: 0;
+  border-radius: 0.2em;
+  border: 1px solid #fff;
+}
+
 /*!
  * Font Awesome Free 5.3.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -7908,7 +7964,7 @@ body {
 }
 
 .header-inscrevase {
-  background: blue url("../images/bg1.jpg") no-repeat scroll left center;
+  background: blue url("../images/home.jpg") no-repeat scroll left center;
 }
 
 .inscrevase {
@@ -7949,6 +8005,10 @@ body {
 
 .compartilhe2 {
   grid-area: compartilhe2;
+}
+
+.footer {
+  grid-area: footer;
 }
 
 .box {

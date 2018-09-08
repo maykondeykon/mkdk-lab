@@ -1,8 +1,11 @@
 @import "../helpers/var";
+@import "../helpers/mixins";
 
 .inscrevase {
   display: grid;
   color: $cor_primaria;
+  @include filtro-escurecido;
+
   .perfil-inscrevase-form {
     display: grid;
     grid-column: 1;
@@ -13,17 +16,48 @@
         padding: 0.3em 0;
         margin: 0;
         list-style: none;
+        text-align: justify;
       }
-      li:before {
-        content: "►";
-        display: block;
-        float: left;
-        width: 1.2em;
-        color: #ff0000;
+      li {
+        display: inline-flex;
+        margin: 0 1em 1em 0;
+        i {
+          font-size: 2.2em;
+          display: inline-flex;
+          margin: 0 1em 0 0;
+        }
       }
     }
     .inscrevase-form {
       grid-column: 2;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      form {
+        background-color: $cor_secundaria;
+        max-width: 17em;
+        padding: 0.6em;
+        text-align: center;
+        @include radius();
+        opacity: 100;
+        input {
+          display: block;
+          margin-bottom: 0.4em;
+          @include form-input;
+        }
+        button {
+          @include form-input;
+          background-color: $cor_secundaria;
+          border: 1px solid #fff;
+          color: #fff;
+          cursor: pointer;
+        }
+        button:hover{
+          background-color: #0765ca;
+        }
+      }
     }
   }
 }

@@ -1,0 +1,18 @@
+@import "../helpers/var";
+@import "../helpers/mixins";
+
+.explore1{
+    text-align: center;
+    background-color: #444;
+    color: #fff;
+
+    .link-button{
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        padding: 0.6em;
+        background-color: #444;
+        @include radius();
+        border: 1px solid #fff;
+    }
+}

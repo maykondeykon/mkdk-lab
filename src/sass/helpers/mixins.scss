@@ -1,0 +1,15 @@
+@mixin form-input() {
+  width: -webkit-fill-available;
+  padding: 0.6em;
+  @include radius();
+}
+
+@mixin radius() {
+  border: 0;
+  border-radius: 0.2em;
+}
+
+@mixin filtro-escurecido() {
+  background-color: #232323;
+  opacity: 0.8;
+}

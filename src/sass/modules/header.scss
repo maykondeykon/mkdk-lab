@@ -1,11 +1,11 @@
 @import "../helpers/var";
+@import "../helpers/mixins";
 
 .header {
     display: grid;
     border-bottom: 0.1em solid $cor_secundaria;
     color: $cor_primaria;
-    background-color: #232323;
-    opacity: 0.8;
+    @include filtro-escurecido;
     .logo{
         grid-column: 1;
         font-family: 'Cinzel Decorative', cursive;
