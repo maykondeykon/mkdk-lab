@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon-256.png" />
     <title>MkDkLab</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
@@ -13,8 +14,8 @@
 <body>
     <div class="wrapper">
         <div class="header-inscrevase">
-            <div class="box header">
-                <span class="logo">MkDkLab</span>
+            <div id="header" class="box header">
+                <a class="logo" href="#header">MkDkLab</a>
                 <section class="menu">
                     <ul>
                         <li><a href="#home">Home</a></li>
@@ -36,7 +37,8 @@
                                 vulputate nulla quis quam rutrum, et sodales dolor hendrerit.</li>
                             <li><i class="far fa-check-square"></i> Sed velit massa, dapibus a lectus a, tempus efficitur
                                 justo. Proin quis ultrices quam. Vestibulum lorem est, hendrerit ac erat et, placerat sagittis
-                                ante.</li>
+                                ante.
+                            </li>
                         </ul>
                     </div>
                     <div class="box inscrevase-form">
@@ -94,13 +96,39 @@
                 </ul>
             </div>
             <div class="box crie2-img">
-                    <img src="./images/create-section1.jpg" alt="">
-                </div>
+                <img src="./images/create-section1.jpg" alt="">
+            </div>
         </div>
-        <div class="box1 compartilhe1">Compartilhe1</div>
-        <div class="box1 compartilhe2">Compartilhe2</div>
-        <div class="box1 footer">Footer</div>
+        <div class="box compartilhe1">
+            <h1>Compartilhe</h1>
+            <p>Curabitur tincidunt ligula ac nisl rhoncus vehicula. Vestibulum rhoncus ultrices augue vel feugiat.</p>
+            <a href="#compartilhe" class="link-button">Leia mais...</a>
+        </div>
+        <div id="compartilhe" class="box compartilhe2">
+            <div class="box compartilhe2-img">
+                <img src="./images/share-section1.jpg" alt="">
+            </div>
+            <div class="box compartilhe2-text">
+                <h3>Compartilhe o que você criou</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed metus erat. Donec pellentesque lacus
+                    eget eros fermentum congue. Sed eu semper magna.</p>
+                <ul>
+                    <li><i class="far fa-check-square"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                        vel tincidunt ligula. Morbi rhoncus odio quis diam malesuada dapibus. Integer fringilla ante et lorem
+                        consequat fringilla.</li>
+                    <li><i class="far fa-check-square"></i> Vivamus luctus mauris eget aliquam vulputate. Mauris vulputate
+                        nulla quis quam rutrum, et sodales dolor hendrerit.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box footer">
+            <a class="logo" href="#header">MkDkLab</a>
+            <p>Copyright &copy; 2018</p>
+            <a href="#compartilhe" class="link-button">Fale conosco</a>
+        </div>
     </div>
+
+    <button onclick="topFunction()" id="btnTopo" title="Topo"><i class="fas fa-home"></i></button>
 </body>
 
 </html>

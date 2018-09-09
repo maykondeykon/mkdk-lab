@@ -8,11 +8,6 @@
   background-color: #232323;
   opacity: 0.8;
 }
-.header .logo {
-  grid-column: 1;
-  font-family: "Cinzel Decorative", cursive;
-  padding-left: 0.5em;
-}
 .header .menu {
   grid-column: 2;
   text-align: right;
@@ -67,6 +62,7 @@
   font-size: 2.2em;
   display: inline-flex;
   margin: 0 1em 0 0;
+  color: #007BFF;
 }
 .inscrevase .perfil-inscrevase-form .inscrevase-form {
   grid-column: 2;
@@ -120,16 +116,6 @@
   background-color: #444;
   color: #fff;
 }
-.explore1 .link-button {
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  padding: 0.6em;
-  background-color: #444;
-  border: 0;
-  border-radius: 0.2em;
-  border: 1px solid #fff;
-}
 
 .explore2 {
   display: grid;
@@ -160,6 +146,7 @@
   font-size: 2.2em;
   display: inline-flex;
   margin: 0 1em 0 0;
+  color: #007BFF;
 }
 .explore2 .explore2-text p {
   text-align: justify;
@@ -174,16 +161,6 @@
   text-align: center;
   background-color: #007BFF;
   color: #fff;
-}
-.crie1 .link-button {
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  padding: 0.6em;
-  background-color: #007BFF;
-  border: 0;
-  border-radius: 0.2em;
-  border: 1px solid #fff;
 }
 
 .crie2 {
@@ -219,6 +196,7 @@
   font-size: 2.2em;
   display: inline-flex;
   margin: 0 1em 0 0;
+  color: #007BFF;
 }
 .crie2 .crie2-text p {
   text-align: justify;
@@ -229,6 +207,63 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.compartilhe1 {
+  text-align: center;
+  background-color: #007BFF;
+  color: #fff;
+}
+
+.compartilhe2 {
+  display: grid;
+}
+.compartilhe2 .compartilhe2-img {
+  display: grid;
+  align-items: center;
+}
+.compartilhe2 .compartilhe2-img img {
+  margin: 0 auto;
+  max-width: 240px;
+  clip-path: ellipse(115px 70px at center);
+}
+.compartilhe2 .compartilhe2-text {
+  text-align: center;
+  display: grid;
+}
+.compartilhe2 .compartilhe2-text ul {
+  padding: 0.3em 0;
+  margin: 0;
+  list-style: none;
+  text-align: justify;
+}
+.compartilhe2 .compartilhe2-text li {
+  display: inline-flex;
+  margin: 0 1em 1em 0;
+}
+.compartilhe2 .compartilhe2-text li i {
+  font-size: 2.2em;
+  display: inline-flex;
+  margin: 0 1em 0 0;
+  color: #007BFF;
+}
+.compartilhe2 .compartilhe2-text p {
+  text-align: justify;
+}
+
+@media only screen and (min-width: 600px) {
+  .compartilhe2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.footer {
+  background-color: #444;
+  text-align: center;
+  color: #f5eee7;
+}
+.footer .link-button {
+  background-color: #007BFF;
+  border: 0;
+}
+
 /*!
  * Font Awesome Free 5.3.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -8057,8 +8092,37 @@ body {
   font-family: "Dosis", sans-serif;
 }
 
+.box {
+  padding: 10px;
+  padding-bottom: 25px;
+}
+
 .header {
   grid-area: header;
+  padding-bottom: 10px;
+}
+
+.logo {
+  grid-column: 1;
+  font-family: "Cinzel Decorative", cursive;
+  padding-left: 0.5em;
+  text-decoration: none;
+  color: #adadad;
+}
+
+.logo:hover {
+  color: #fff;
+}
+
+.link-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.6em;
+  background-color: unset;
+  border: 0;
+  border-radius: 0.2em;
+  border: 1px solid #fff;
 }
 
 .header-inscrevase {
@@ -8109,17 +8173,6 @@ body {
   grid-area: footer;
 }
 
-.box {
-  padding: 10px;
-}
-
-.box1 {
-  background-color: #444;
-  color: #fff;
-  padding: 10px;
-  font-size: 150%;
-}
-
 .wrapper {
   background-color: #f5eee7;
   color: #444;
@@ -8129,6 +8182,26 @@ body {
   display: grid;
   grid-gap: 0.06em;
   grid-template-areas: "header" "inscrevase" "explore1" "explore2" "crie1" "crie2" "compartilhe1" "compartilhe2" "footer";
+}
+
+#btnTopo {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #007BFF;
+  color: #f5eee7;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#btnTopo:hover {
+  background-color: #0765ca;
 }
 
 /*# sourceMappingURL=main.css.map */

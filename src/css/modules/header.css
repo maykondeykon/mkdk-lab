@@ -5,11 +5,6 @@
   background-color: #232323;
   opacity: 0.8;
 }
-.header .logo {
-  grid-column: 1;
-  font-family: "Cinzel Decorative", cursive;
-  padding-left: 0.5em;
-}
 .header .menu {
   grid-column: 2;
   text-align: right;

@@ -1,0 +1,29 @@
+@import "../helpers/var";
+@import "../helpers/mixins";
+
+.compartilhe2 {
+  display: grid;
+
+  .compartilhe2-img {
+    display: grid;
+    align-items: center;
+    img {
+      margin: 0 auto;
+      @include img-ellipsed;
+    }
+  }
+  .compartilhe2-text {
+    text-align: center;
+    display: grid;
+    @include custom-list;
+    p {
+      text-align: justify;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .compartilhe2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,12 @@
+@import "../helpers/var";
+@import "../helpers/mixins";
+
+.footer{
+    background-color: $cor_3;
+    text-align: center;
+    color: $cor_primaria;
+    .link-button {
+        background-color: $cor_secundaria;
+        border: 0;
+    }
+}

@@ -5,6 +5,9 @@
 @import "modules/explore2";
 @import "modules/crie1";
 @import "modules/crie2";
+@import "modules/compartilhe1";
+@import "modules/compartilhe2";
+@import "modules/footer";
 @import "../../node_modules/typeface-dosis/index.css";
 @import "../../node_modules/typeface-cinzel-decorative/index.css";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
@@ -18,9 +21,37 @@ body {
   font-family: "Dosis", sans-serif;
 }
 
+.box {
+  padding: 10px;
+  padding-bottom: 25px;
+}
+
 .header {
   grid-area: header;
+  padding-bottom: 10px;
 }
+
+.logo{
+  grid-column: 1;
+  font-family: 'Cinzel Decorative', cursive;
+  padding-left: 0.5em;
+  text-decoration: none;
+  color: #adadad;
+}
+.logo:hover{
+  color: #fff;
+}
+
+.link-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.6em;
+  background-color: unset;
+  @include radius();
+  border: 1px solid #fff;
+}
+
 .header-inscrevase {
   background: blue url($pasta_imagens+$bg_1) no-repeat scroll left center;
 }
@@ -58,16 +89,6 @@ body {
   grid-area: footer;
 }
 
-.box {
-  padding: 10px;
-}
-.box1 {
-  background-color: #444;
-  color: #fff;
-  padding: 10px;
-  font-size: 150%;
-}
-
 .wrapper {
   background-color: $cor_primaria;
   color: #444;
@@ -86,4 +107,24 @@ body {
     "compartilhe1"
     "compartilhe2"
     "footer";
+}
+
+#btnTopo {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: $cor_secundaria;
+  color: $cor_primaria;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#btnTopo:hover {
+  background-color: #0765ca;
 }
