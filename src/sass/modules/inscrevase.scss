@@ -12,21 +12,7 @@
     grid-template-columns: 2fr 1fr;
     .perfil {
       grid-column: 1;
-      ul {
-        padding: 0.3em 0;
-        margin: 0;
-        list-style: none;
-        text-align: justify;
-      }
-      li {
-        display: inline-flex;
-        margin: 0 1em 1em 0;
-        i {
-          font-size: 2.2em;
-          display: inline-flex;
-          margin: 0 1em 0 0;
-        }
-      }
+      @include custom-list;
     }
     .inscrevase-form {
       grid-column: 2;

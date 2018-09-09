@@ -13,3 +13,26 @@
   background-color: #232323;
   opacity: 0.8;
 }
+
+@mixin img-ellipsed {
+  max-width: 240px;
+  clip-path: ellipse(115px 70px at center);
+}
+
+@mixin custom-list{
+  ul {
+    padding: 0.3em 0;
+    margin: 0;
+    list-style: none;
+    text-align: justify;
+  }
+  li {
+    display: inline-flex;
+    margin: 0 1em 1em 0;
+    i {
+      font-size: 2.2em;
+      display: inline-flex;
+      margin: 0 1em 0 0;
+    }
+  }
+}
