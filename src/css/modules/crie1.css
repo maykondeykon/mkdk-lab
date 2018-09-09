@@ -1,0 +1,17 @@
+.crie1 {
+  text-align: center;
+  background-color: #007BFF;
+  color: #fff;
+}
+.crie1 .link-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.6em;
+  background-color: #007BFF;
+  border: 0;
+  border-radius: 0.2em;
+  border: 1px solid #fff;
+}
+
+/*# sourceMappingURL=crie1.css.map */

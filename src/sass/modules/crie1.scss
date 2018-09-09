@@ -1,0 +1,18 @@
+@import "../helpers/var";
+@import "../helpers/mixins";
+
+.crie1 {
+  text-align: center;
+  background-color: $cor_secundaria;
+  color: #fff;
+
+  .link-button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 0.6em;
+    background-color: $cor_secundaria;
+    @include radius();
+    border: 1px solid #fff;
+  }
+}

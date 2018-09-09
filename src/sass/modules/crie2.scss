@@ -1,0 +1,31 @@
+@import "../helpers/var";
+@import "../helpers/mixins";
+
+.crie2 {
+  display: grid;
+  background-color: $cor_3;
+  color: $cor_primaria;
+  .crie2-img {
+    display: grid;
+    align-items: center;
+    img {
+      margin: 0 auto;
+      display: inline;
+      @include img-ellipsed;
+    }
+  }
+  .crie2-text {
+    text-align: center;
+    display: grid;
+    @include custom-list;
+    p {
+      text-align: justify;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .crie2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

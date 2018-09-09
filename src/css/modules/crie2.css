@@ -1,0 +1,45 @@
+.crie2 {
+  display: grid;
+  background-color: #444;
+  color: #f5eee7;
+}
+.crie2 .crie2-img {
+  display: grid;
+  align-items: center;
+}
+.crie2 .crie2-img img {
+  margin: 0 auto;
+  display: inline;
+  max-width: 240px;
+  clip-path: ellipse(115px 70px at center);
+}
+.crie2 .crie2-text {
+  text-align: center;
+  display: grid;
+}
+.crie2 .crie2-text ul {
+  padding: 0.3em 0;
+  margin: 0;
+  list-style: none;
+  text-align: justify;
+}
+.crie2 .crie2-text li {
+  display: inline-flex;
+  margin: 0 1em 1em 0;
+}
+.crie2 .crie2-text li i {
+  font-size: 2.2em;
+  display: inline-flex;
+  margin: 0 1em 0 0;
+}
+.crie2 .crie2-text p {
+  text-align: justify;
+}
+
+@media only screen and (min-width: 600px) {
+  .crie2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*# sourceMappingURL=crie2.css.map */
