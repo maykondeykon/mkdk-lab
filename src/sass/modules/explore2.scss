@@ -1,0 +1,29 @@
+@import "../helpers/var";
+@import "../helpers/mixins";
+
+.explore2 {
+  display: grid;
+
+  .explore2-img {
+    display: grid;
+
+    img {
+      margin: 0 auto;
+      @include img-ellipsed;
+    }
+  }
+  .explore2-text {
+    text-align: center;
+    display: grid;
+    @include custom-list;
+    p{
+        text-align:justify;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .explore2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
